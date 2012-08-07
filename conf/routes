@@ -1,5 +1,8 @@
 
 
-GET     /                           controllers.Application.index
-GET     /set                        controllers.Application.set
-GET     /destroy                    controllers.Application.destroy
+GET     /                 controllers.Application.index
+GET     /set              controllers.Application.set
+GET     /destroy          controllers.Application.destroy
+
+GET     /set-cookie       controllers.Application.setCookie
+GET     /destroy-cookie   controllers.Application.destroyCookie

@@ -1,8 +1,12 @@
-@(message: String)
+@(sessionVal: String, cookieVal: String)
 
-Session message: @message
+Session message: @sessionVal <br/>
+Cookie message: @cookieVal
 
 <br/><br/>
 
 <a href="@routes.Application.set">Set session</a><br/>
-<a href="@routes.Application.destroy">Destroy session</a>
+<a href="@routes.Application.destroy">Destroy session</a><br/><br/>
+
+<a href="@routes.Application.setCookie">Set cookie</a><br/>
+<a href="@routes.Application.destroyCookie">Destroy cookie</a><br/><br/>
