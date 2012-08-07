@@ -1,13 +1,8 @@
 @(message: String)
 
-@main("Welcome to Play 2.0") {
-    
-   Session message: @message
+Session message: @message
 
 <br/><br/>
 
 <a href="@routes.Application.set">Set session</a><br/>
 <a href="@routes.Application.destroy">Destroy session</a>
-
-    
-}
