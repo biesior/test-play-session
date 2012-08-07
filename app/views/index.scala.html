@@ -1,12 +1,17 @@
 @(sessionVal: String, cookieVal: String)
 
-Session message: @sessionVal <br/>
-Cookie message: @cookieVal
+Session message: @sessionVal    <br/>
+Cookie message: @cookieVal      <br/>
+Flash Message: @if(flash.containsKey("flashmsg")) { @flash.get("flashmsg") (it will disappear after ANY <a href="@routes.Application.index">refresh</a>) } else { (there's no flash message) }
 
 <br/><br/>
+
+<a href="@routes.Application.index">REFRESH</a><br/><br/>
 
 <a href="@routes.Application.set">Set session</a><br/>
 <a href="@routes.Application.destroy">Destroy session</a><br/><br/>
 
 <a href="@routes.Application.setCookie">Set cookie</a><br/>
 <a href="@routes.Application.destroyCookie">Destroy cookie</a><br/><br/>
+
+<a href="@routes.Application.setFlash">Set flash</a>

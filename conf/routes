@@ -6,3 +6,5 @@ GET     /destroy          controllers.Application.destroy
 
 GET     /set-cookie       controllers.Application.setCookie
 GET     /destroy-cookie   controllers.Application.destroyCookie
+
+GET     /set-flash        controllers.Application.setFlash

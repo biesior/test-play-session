@@ -54,4 +54,10 @@ public class Application extends Controller {
         return redirect(routes.Application.index());
     }
 
+    public static Result setFlash() {
+
+        flash("flashmsg", "That's FlashMessage!!!!");
+        return redirect(routes.Application.index());
+    }
+
 }
